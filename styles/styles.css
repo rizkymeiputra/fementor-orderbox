@@ -1,0 +1,136 @@
+body {
+  background-color: #e0e8ff;
+  background-image: url(../images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  color: #7280a7;
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #3829e0;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #241a99;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.button {
+  background-color: transparent;
+  border-radius: 0.75rem;
+  border: 0;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 900;
+  font-family: "Red Hat Display", sans-serif;
+  cursor: pointer;
+  color: #7280a7;
+}
+
+.order-summary {
+  width: 450px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.order-summary__title {
+  font-size: 1.75rem;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 0.25rem;
+  margin-bottom: 1.25rem;
+  color: #1f2f56;
+}
+.order-summary__desc {
+  padding: 0 1.5rem;
+  line-height: 1.75;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+}
+.order-summary__summary {
+  background-color: #f8f9fe;
+  display: flex;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
+}
+
+.order-summary__summary_icon {
+  margin-right: 1.25rem;
+}
+
+.order-summary__plan {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+.order-summary__summary_action {
+  margin-left: auto;
+}
+.order-summary__payment {
+  background-color: #3829e0;
+  margin-bottom: 1rem;
+  color: #fff;
+  box-shadow: 1px 13px 48px -16px rgba(31, 47, 86, 0.8);
+  -webkit-box-shadow: 1px 13px 48px -16px rgba(31, 47, 86, 0.8);
+  -moz-box-shadow: 1px 13px 48px -16px rgba(31, 47, 86, 0.8);
+}
+.order-summary__cancel {
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 1px 13px 48px -16px rgba(31, 47, 86, 0.25);
+  -webkit-box-shadow: 1px 13px 48px -16px rgba(31, 47, 86, 0.25);
+  -moz-box-shadow: 1px 13px 48px -16px rgba(31, 47, 86, 0.25);
+}
+
+.card__body {
+  padding: 2.25rem 3rem;
+}
+
+@media (max-width: 575.98px) {
+  body {
+    background-image: url(../images/pattern-background-mobile.svg);
+  }
+
+  .card {
+    width: 80%;
+    box-sizing: border-box;
+    margin: 0 auto 0;
+  }
+
+  .card__body {
+    padding: 1.5rem;
+  }
+
+  .attribution {
+    font-size: 12px;
+  }
+}
